@@ -209,12 +209,12 @@ Use "retry" only if the prompt is vague, contradictory, or missing critical visu
     console.log(`[graph]   size: ${state.size}`);
     console.log(`[graph]   prompt: ${state.refinedPrompt || state.originalPrompt}`);
 
-    emit({ type: 'step', label: 'Generating image with gpt-image-1…' });
+    emit({ type: 'step', label: 'Generating image with gpt-image-2…' });
 
     const s = span('generate', { prompt: state.refinedPrompt, size: state.size });
     const start = Date.now();
     const response = await openai.images.generate({
-      model: 'gpt-image-1',
+      model: 'gpt-image-2',
       prompt: state.refinedPrompt || state.originalPrompt,
       size: state.size,
       n: 1,
