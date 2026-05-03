@@ -184,7 +184,7 @@ function App() {
       <header className="topbar">
         <div>
           <h1>Image Agent</h1>
-          <p className="subtitle">gpt-4o-mini → gpt-image-1</p>
+          <p className="subtitle">gpt-4o-mini → gpt-image-2</p>
         </div>
         <button className="secondary" onClick={handleShare} disabled={!prompt.trim()}>
           {copyFeedback ? '✓ Copied!' : 'Share prompt'}
